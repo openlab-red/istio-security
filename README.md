@@ -120,6 +120,23 @@ oc new-project <whatever valid project name you want>
 
 ### Build and Deploy the Application
 
+####  Using Fabric8 Maven plugin
+
+Build and deploy the services directly:
+
+```bash
+cd name
+mvn clean fabric8:deploy -Popenshift
+cd ..
+```
+
+```bash
+cd greeting
+mvn clean fabric8:deploy -Popenshift
+cd ..
+```
+
+
 #### With Source to Image build (S2I)
 
 Run the following commands to apply and execute the OpenShift templates that will configure and deploy the applications:
